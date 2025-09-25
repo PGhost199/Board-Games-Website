@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<link rel="icon" href="images/logo.png" />
+	</head>
+	<body>
+		<nav id="navbar">
+			<div class="nav-items">
+				<a class="nav-pages home" href="index.html"
+					><p class="nav-text">Home Page</p></a
+				>
+				<a class="nav-pages" href="board-game-history.html"
+					><p class="nav-text">Board Game History</p></a
+				>
+				<a class="nav-pages" href="chess-history.html"
+					><p class="nav-text">Chess History</p></a
+				>
+				<a class="nav-pages" href="chess-chempions.html"
+					><p class="nav-text">Chess Champions</p></a
+				>
+				<a id="active" class="nav-pages" href="forms.html"
+					><p class="nav-text">Form</p></a
+				>
+				<button id="dark-mode1" onclick="setDarkMode()">Dark Mode</button>
+			</div>
+			<div class="nav-icon">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			<div class="menu" id="menu">
+				<a class="nav-pages home" href="index.html"
+					><p class="nav-text">Home Page</p></a
+				>
+				<a class="nav-pages" href="board-game-history.html"
+					><p class="nav-text">Board Game History</p></a
+				>
+				<a class="nav-pages" href="chess-history.html"
+					><p class="nav-text">Chess History</p></a
+				>
+				<a class="nav-pages" href="chess-chempions.html"
+					><p class="nav-text">Chess Champions</p></a
+				>
+				<a id="active" class="nav-pages" href="forms.html"
+					><p class="nav-text">Form</p></a
+				>
+				<button id="dark-mode2" onclick="setDarkMode()">Dark Mode</button>
+			</div>
+		</nav>
+		<header class="upper5">
+			<h1>You can submit a Form here:</h1>
+		</header>
+
+		<div id="content">
+			<form
+				action="mailto:achinadaraia2005@gmail.com"
+				method="post"
+				enctype="text/plain"
+			>
+				<div id="form-left">
+					<input
+						class="left1"
+						type="text"
+						name="Name"
+						placeholder="Enter Name"
+						required
+					/>
+					<input
+						class="left1"
+						type="email"
+						placeholder="Enter your E-mail"
+						required
+					/>
+					<select class="left1" name="AgeRange">
+						<option value="">Choose Age</option>
+						<option value="1">10-20</option>
+						<option value="2">21-40</option>
+						<option value="3">40-90</option>
+					</select>
+
+					<div class="radioo">
+						<div class="rad1">
+							<input name="radioAll" type="radio" id="radio1" />
+							<label for="radio1">male</label>
+						</div>
+						<div class="rad1">
+							<input name="radioAll" type="radio" id="radio2" />
+							<label for="radio2">female</label>
+						</div>
+						<div class="rad1">
+							<input name="radioAll" type="radio" id="radio3" />
+							<label for="radio3">other</label>
+						</div>
+					</div>
+				</div>
+
+				<div id="form-right">
+					<textarea
+						rows="5"
+						cols="30"
+						name="text"
+						placeholder="tell us about your concerns"
+					></textarea>
+
+					<div class="remember">
+						<input
+							type="checkbox"
+							id="textCheck"
+							name="checkVal"
+							checked
+						/>
+						<label for="textCheck">Remember me</label>
+					</div>
+					<div class="butonebi">
+						<div class="but-left">
+							<input class="buttons-reset" type="reset" value="Reset" />
+						</div>
+						<div class="but-right">
+							<input
+								class="buttons-submit"
+								type="submit"
+								value="Enter Submit"
+							/>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
